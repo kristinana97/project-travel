@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Travel</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="wrapper header_wrapper box-shadow">
+        <div class="logo">
+          <span class="ico ico_logo"></span>
+          <span class="logo__text">Travel Portal </span>
+        </div>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__item_link" href="#preview">How It Works</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__item_link" href="#steps">Plan Your Trip</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__item_link" href="#destinations"
+                >Destinations</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__item_link" href="#stories"
+                >Travel Stories</a>
+            </li>
+            <li class="navigation__item navigation__item_mobile nav_popup__link">
+              <a class="navigation__item_link" href="#">Account</a>
+            </li>
+            <li class="navigation__item navigation__item_mobile">
+              <a class="navigation__item_link" href="#footer">Social Media</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button button_login" id="button_login">Login</button>
+        <div class="pop-up hidden">
+          <div class="pop-up__container">
+            <div class="pop-up__wrapper">
+              <span class="pop-up__title" data-i18="title">Log in to your account</span>
+              <button class="pop-up__button pop-up__button_facebook of-visibility"><span class="ico ico_facebook"></span>Sign In with Facebook</button>
+              <button class="pop-up__button pop-up__button_google of-visibility"><span class="ico ico_google"></span>Sign In with Google</button>
+              <div class="pop-up__line_container">
+                <span class="pop-up__line_text of-visibility">or</span>
+            </div>
+            <div class="pop-up__form_container">
+              <span class="pop-up__form_text">E-mail</span>
+                <input type="text" name="email" id="email">
+              <span class="pop-up__form_text">Password</span>
+                <input type="password" name="password" id="password">
+            </div>
+              <button class="pop-up__button pop-up__button_signin" id="button_sign-in" data-i18="sing__btn">Sign In</button>
+              <a href="" class="pop-up__password-remark of-visibility">Forgot Your Password?</a>
+              <div class="pop-up__line"></div>
+              <span class="pop-up__remark" data-i18="сreate__account">Don’t have an account? <a data-i18="сreate__account" class="pop-up__remark_link">Register</a></span>
+            </div>
+          </div>
+      </div>
+        <div class="burger">
+          <span></span>
+      </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="preview" id="preview">
+        <div class="wrapper preview_wrapper">
+          <div class="preview_content">
+            <h1 class="title-first">Explore the beauty of the World</h1>
+            <span class="preview__text"
+              >Recieve personalized recommendations for countries, hotels,
+              activities and more</span
+            >
+            <div class="prewiew__form">
+              <input
+                type="text"
+                name="prewiew__form"
+                id="prewiew__form"
+                placeholder="What would you like to do?"
+              />
+              <button class="button button_sipmle">Start Planning</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="steps" id="steps">
+        <div class="wrapper steps_wrapper">
+          <h2 class="title-second">3 steps to the perfect trip</h2>
+          <div class="steps-container">
+            <div class="step">
+              <span class="ico ico_bike"></span>
+              <span class="step__text">Tell us what you want to do</span>
+            </div>
+            <div class="step">
+              <span class="ico ico_calendar"></span>
+              <span class="step__text">Share us preferable dates </span>
+            </div>
+            <div class="step">
+              <span class="ico ico_airplane"></span>
+              <span class="step__text">We will give you recommendations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destinations" id="destinations">
+        <div class="wrapper destinations__wrapper">
+          <h2 class="title-second">Popular destinations</h2>
+          <div class="arrow arrow_left"></div>
+          <div class="arrow arrow_right"></div>
+          <div class="slider">
+            <div class="slides">
+              
+              <div class="slide">
+                <span class="slide__img slide__img_spain">
+                  <span class="slide__img_text">Spain</span>
+                </span>
+              </div>
+              <div class="slide">
+                <span class="slide__img slide__img_japan">
+                  <span class="slide__img_text">Japan</span>
+                </span>
+              </div>
+              <div class="slide">
+                <span class="slide__img slide__img_usa">
+                  <span class="slide__img_text">USA</span>
+                </span>
+              </div>
+
+              
+            </div>
+          </div>
+          <div class="controls">
+            <a href="#item-1" class="control-button"></a>
+            <a href="#item-2" class="control-button"></a>
+            <a href="#item-3" class="control-button"></a>
+          </div>
+          <button class="button button_arrow">
+            <span class="ico ico_arrow"></span>
+            Find More
+          </button>
+        </div>
+      </section>
+      <section class="stories" id="stories">
+        <div class="wrapper stories__wrapper">
+          <h2 class="title-second">Travel stories</h2>
+          <div class="stories-container">
+            <div class="story">
+              <span class="story_img story_img__thailand box-shadow"></span>
+              <div class="story__content">
+                <h3 class="story__title">10 Photos of Attractive Thailand</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                </p>
+                <a href="#" class="story__link">Read More</a>
+              </div>
+            </div>
+            <div class="story">
+              <span class="story_img story_img__utah box-shadow"></span>
+              <div class="story__content">
+                <h3 class="story__title">Canyonlands National Park, Utah</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                </p>
+                <a href="#" class="story__link">Read More</a>
+              </div>
+            </div>
+            <div class="story">
+              <span class="story_img story_img__mountains box-shadow"></span>
+              <div class="story__content">
+                <h3 class="story__title">I left my heart in the Mountains!</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                </p>
+                <a href="#" class="story__link">Read More</a>
+              </div>
+            </div>
+            <div class="story">
+              <span class="story_img story_img__journey box-shadow"></span>
+              <div class="story__content">
+                <h3 class="story__title">The Longest journey in my life!</h3>
+                <p class="story__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit...
+                </p>
+                <a href="#" class="story__link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <button class="button button_arrow">
+            <span class="ico ico_arrow"></span>
+            See More
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__social_container">
+          <div class="footer__social_left">
+            <ul class="footer__social">
+              <li class="footer__social_item">
+                <a
+                  href="https://rs.school/js-stage0/"
+                  class="footer__social_item-link"
+                  target="_blank"
+                  ><span class="ico ico_rsschool"></span
+                ></a>
+              </li>
+              <li class="footer__social_item">
+                <a
+                  href="https://github.com/kristinana97"
+                  class="footer__social_item-link"
+                  target="_blank"
+                  ><span class="ico ico_github"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social_middle">
+            <span class="footer__copyrigh"
+            >All Rights Reserved © Travel Portal</span
+          >
+          </div>
+          <div class="footer__social_right">
+            <ul class="footer__social">
+              <li class="footer__social_item">
+                <a
+                  href="https://www.instagram.com/kristinarejko/"
+                  target="_blank"
+                  class="footer__social_item-link"
+                  ><span class="ico ico_instagram"></span
+                ></a>
+              </li>
+              <li class="footer__social_item">
+                <a
+                  href="https://www.youtube.com/c/RollingScopesSchool"
+                  target="_blank"
+                  class="footer__social_item-link"
+                  ><span class="ico ico_youtube"></span
+                ></a>
+              </li>
+              <li class="footer__social_item">
+                <a
+                  href="https://github.com/rolling-scopes-school/tasks/tree/master/tasks/travel"
+                  target="_blank"
+                  class="footer__social_item-link"
+                  ><span class="ico ico_twitter"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
